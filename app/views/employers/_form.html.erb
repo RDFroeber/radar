@@ -28,14 +28,20 @@
   <%= f.label :company_type %>
   <%= f.text_field :company_type %><br />
   
-  <%= f.label :photo %>
-  <%= f.file_field :photo %><br />
+  <div class="column-30">
+    <%= f.label :photo %>
+    <%= f.file_field :photo %>
+  </div>
 
-  <%= f.label :company_size %>
-  <%= f.select :company_size, ["myself only","2-10","11-50","51-200","201-500","501-1000","1000+"] %><br />
+  <div class="column-30">
+    <%= f.label :company_size %>
+    <%= f.select :company_size, ["myself only","2-10","11-50","51-200","201-500","501-1000","1000+"] %>
+  </div>
 
-  <%= f.label :apprentice_partner %> 
-  <%= f.check_box :apprentice_partner %><br />
+  <div class="column-30">
+    <%= f.label :apprentice_partner %> 
+    <%= f.check_box :apprentice_partner %><br />
+  </div>
 
   <%= f.submit logged_in? ? 'Update' : 'Sign Up' %>
 <% end %>
