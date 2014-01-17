@@ -28,8 +28,6 @@ gem 'jquery-rails'
 # Turbolinks makes following links in your web application faster. Read more: https://github.com/rails/turbolinks
 gem 'turbolinks'
 
-gem 'pry-rails'
-
 # Build JSON APIs with ease. Read more: https://github.com/rails/jbuilder
 gem 'jbuilder', '~> 1.2'
 
@@ -45,6 +43,13 @@ gem 'bcrypt-ruby', '~> 3.0.0'
 gem 'acts-as-taggable-on'
 
 gem 'rails_12factor', group: :production
+
+# Pry and RSpec testing
+group :development, :test do
+  gem 'pry-rails'
+  gem 'rspec-rails', '~> 2.14.0'
+  gem 'factory_girl_rails'
+end
 
 # gem 'protected_attributes'
 
