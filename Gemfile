@@ -58,4 +58,3 @@ gem 'rails_12factor', group: :production
 # gem 'debugger', group: [:development, :test]
 
 ruby '2.0.0'
-

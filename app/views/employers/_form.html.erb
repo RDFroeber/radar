@@ -25,9 +25,13 @@
     <%= f.text_field attr.to_sym %><br />
   <% end %>
 
+  <div class="column-30">
+    <%= f.label :company_type %>
+    <%= f.text_field :company_type %>
+  </div>
   <%= f.label :company_type %>
-  <%= f.text_field :company_type %><br />
-  
+  <%= f.text_field :company_type %><br /><br />
+
   <div class="column-30">
     <%= f.label :photo %>
     <%= f.file_field :photo %>
@@ -40,7 +44,7 @@
 
   <div class="column-30">
     <%= f.label :apprentice_partner %> 
-    <%= f.check_box :apprentice_partner %><br />
+    <%= f.check_box :apprentice_partner %> 
   </div>
 
   <%= f.submit logged_in? ? 'Update' : 'Sign Up' %>
